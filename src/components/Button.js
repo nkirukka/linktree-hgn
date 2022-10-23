@@ -1,9 +1,10 @@
 import React from 'react';
+import "./Button.css";
 
 const Button = (props) => {
   return (
       <>
-          <a href={props.href}>{ props.children}</a>
+          <a className='Btn' id={props.id} href={props.href}>{ props.children}</a>
       </>
   )
 }
