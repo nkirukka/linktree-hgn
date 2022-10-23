@@ -2,9 +2,10 @@
   text-decoration: none;
   background-color: #eaecf0;
   color: #101828;
-  padding: 24px 32px;
-  width: 343px;
-  height: 68px;
+  /* padding: 1.5em 2em; */
+  margin: auto;
+  width: 100%;
+  height: 4.25em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +14,7 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75em;
+
 }
