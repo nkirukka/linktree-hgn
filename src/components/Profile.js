@@ -1,10 +1,10 @@
 import React from "react";
-
+import "./styles/Profile.css";
 const Profile = (props) => {
   return (
       <div className="Profile">
           <img src={props.src} id="profile__img" />
-          <p>Nkiruka Ebele</p>
+          <h1>Nkiruka Ebele</h1>
       </div>
   )
 }
