@@ -1,0 +1,8 @@
+.Wrapper{
+    width: 90%;
+    max-width: 1440px;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
