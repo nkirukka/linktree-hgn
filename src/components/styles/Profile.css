@@ -1,0 +1,19 @@
+.Profile{
+    width: 20%;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#profile__img{
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
+}
+.Username{
+font-size: 1.125rem;
+white-space: nowrap;
+font-weight: 700;
+color: #101828;
+}
