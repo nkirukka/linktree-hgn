@@ -18,11 +18,30 @@ const Section = (props) => {
             <Profile src={profilePic} />
 
             <div className='Btn-wrapper'>
-                <Button href="https://training.zuri.team/" id="btn__zuri">Zuri Team</Button>
-                <Button href="https://books.zuri.team/" id="books">Zuri Books</Button>
-                <Button href="https://books.zuri.team/python-for-beginners?ref_id=nkirukka," id="book__python">Python Books</Button>
-                <Button href="https://background.zuri.team/" id="pitch">Background Check for Coders</Button>
-                <Button href="https://books.zuri.team/design-rules" id="book__design">Design Books</Button>
+                <Button
+                    href="https://twitter.com/nkirukka"
+                    id="twitter" > Twitter Link
+                </Button>
+                <Button
+                    href="https://training.zuri.team/"
+                    id="btn__zuri">Zuri Team
+                </Button>
+                <Button
+                    href="https://books.zuri.team/"
+                    id="books">Zuri Books
+                </Button>
+                <Button
+                    href="https://books.zuri.team/python-for-beginners?ref_id=nkirukka,"
+                    id="book__python">Python Books
+                </Button>
+                <Button
+                    href="https://background.zuri.team/"
+                    id="pitch">Background Check for Coders
+                </Button>
+                <Button
+                    href="https://books.zuri.team/design-rules"
+                    id="book__design">Design Books
+                </Button>
             </div>
 
             <Socials />
