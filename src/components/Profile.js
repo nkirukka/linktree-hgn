@@ -9,7 +9,8 @@ const Profile = (props) => {
         id="profile__img"
         alt="profile pic"
       />
-          <h1 className="Username">Annette Black</h1>
+      <h1 className="Username" id="twitter">@nkirukka</h1>
+      <p id="slack">nkirukka</p>
       </div>
   )
 }
