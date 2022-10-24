@@ -17,7 +17,7 @@
     height: 1em;
 }
 
-@media only screen and (min-width: 70px){
+@media only screen and (min-width: 45em){
     .Footer{
         flex-direction: row;
         justify-content: space-between;
