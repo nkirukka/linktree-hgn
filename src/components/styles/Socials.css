@@ -1,5 +1,9 @@
 .Socials{
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 1em;
+}
+.Icons{
+    width: 1.5em;
+    height: 1.5em;
 }
