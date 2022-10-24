@@ -1,10 +1,10 @@
 import './App.css';
-import Section from './components/Section';
+import Linktree from './components/Linktree';
 
 function App() {
   return (
     <div className="App">
-      <Section />
+      <Linktree />
     </div>
   );
 }
