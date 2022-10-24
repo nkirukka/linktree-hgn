@@ -27,11 +27,17 @@
 display: none;
 }
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 45em){
     #Open{
         display: none;
     }
     #Back{
         display: block;
+    }
+    .Toggle{
+        width: 2em;
+        height: 2em;
+        right: 20%;
+        top: 6%;
     }
 }
