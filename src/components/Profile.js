@@ -6,7 +6,7 @@ const Profile = (props) => {
   return (
       <div className="Profile">
           <img src={props.src} id="profile__img" alt="profile pic"/>
-          <h1 className="Username">Nkiruka Ebele</h1>
+          <h1 className="Username">Annette Black</h1>
       </div>
   )
 }
