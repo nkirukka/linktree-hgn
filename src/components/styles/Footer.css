@@ -1,5 +1,6 @@
 .Footer{
     width: 90%;
+    max-width: 80em;
     margin: 0 auto 4em;
     display: flex;
     flex-direction: column;
@@ -14,4 +15,21 @@
 }
 .Footer img{
     height: 1em;
+}
+
+@media only screen and (min-width: 70px){
+    .Footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .Footer img{
+        height: 1.54625em;
+        width: 11.564375em;
+    }
+    .Footer p{
+        font-size: 1rem;
+    }
+    #i4g{
+        width: 8.258125em;
+    }
 }
