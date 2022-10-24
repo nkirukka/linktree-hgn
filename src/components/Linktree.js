@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import "./styles/Section.css";
+import "./styles/Linktree.css";
 import Profile from './Profile';
 import profilePic from './imgs/profile__img.png';
 import Socials from './Socials';
