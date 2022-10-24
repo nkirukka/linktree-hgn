@@ -12,8 +12,8 @@ const Section = (props) => {
     return (
         <section className='Linktree'>
             <div className='Toggle'>
-                <img src={ openIcon} alt='open' id='Open'/>
-                <img src={ backIcon} alt='back' id='Back' />
+                <a href='#'><img src={ openIcon} alt='open' id='Open'/></a>
+                <a href='#'><img src={ backIcon} alt='back' id='Back' /></a>
             </div>
             <Profile src={profilePic} />
 
