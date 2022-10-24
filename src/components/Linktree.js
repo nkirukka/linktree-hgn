@@ -3,12 +3,18 @@ import Button from './Button';
 import "./styles/Linktree.css";
 import Profile from './Profile';
 import profilePic from './imgs/profile__img.png';
+import openIcon from './imgs/open-icon.png';
+import backIcon from './imgs/back-icon.png';
 import Socials from './Socials';
 import Footer from './Footer';
 
 const Section = (props) => {
     return (
-        <section>
+        <section className='Linktree'>
+            <div className='Toggle'>
+                <img src={ openIcon} alt='open' id='Open'/>
+                <img src={ backIcon} alt='back' id='Back' />
+            </div>
             <Profile src={profilePic} />
 
             <div className='Btn-wrapper'>
