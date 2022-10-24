@@ -4,6 +4,7 @@ import "./styles/Linktree.css";
 import Profile from './Profile';
 import profilePic from './imgs/profile__img.png';
 import Socials from './Socials';
+import Footer from './Footer';
 
 const Section = (props) => {
     return (
@@ -19,6 +20,7 @@ const Section = (props) => {
             </div>
 
             <Socials />
+            <Footer/>
         </section>
     );
 };
