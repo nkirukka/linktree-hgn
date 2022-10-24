@@ -1,13 +1,13 @@
 import React from 'react';
 import './styles/Socials.css';
-import slack from './imgs/slack.avif';
+import slack from './imgs/slack.png';
 import github from './imgs/github.png';
 import twitter from './imgs/twitter.png';
 
 const Socials = () => {
   return (
     <div className='Socials'>
-      <a href='https://slack.com/nkirukka' id='slack'>
+      <a href='https://slack.com/nkirukka' id='Slack'>
         <img className='Icons'
           src={slack}
           alt='slack icon'
