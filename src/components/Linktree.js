@@ -24,23 +24,24 @@ const Section = (props) => {
                 </Button>
                 <Button
                     href="https://training.zuri.team/"
-                    id="btn__zuri">Zuri Team
+                    id="btn__zuri">Zuri Training
                 </Button>
                 <Button
                     href="https://books.zuri.team/"
-                    id="books">Zuri Books
+                    id="books">Zuri Books: Find design and coding books here
+                   
                 </Button>
                 <Button
                     href="https://books.zuri.team/python-for-beginners?ref_id=nkirukka,"
-                    id="book__python">Python Books
+                    id="book__python">Python Books: Feature Python for Beginners and get royalties of any sale
                 </Button>
                 <Button
                     href="https://background.zuri.team/"
-                    id="pitch">Background Check for Coders
+                    id="pitch">Check for Coders: Hire credible talent by running a background check
                 </Button>
                 <Button
                     href="https://books.zuri.team/design-rules"
-                    id="book__design">Design Books
+                    id="book__design">Design Books: Get free design books
                 </Button>
             </div>
 
