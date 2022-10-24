@@ -15,5 +15,8 @@
   font-weight: 500;
   font-size: .875rem;
   line-height: 1.75em;
-
+  transition: background-color .5s ease-in-out;
+}
+.Btn:hover{
+  background-color: #d4d9e4;
 }
