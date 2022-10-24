@@ -17,6 +17,9 @@ white-space: nowrap;
 font-weight: 700;
 color: #101828;
 }
+#slack{
+    display: none;
+}
 @media only screen and (min-width: 45em){
     .Username{
         font-size: 1.25em;
