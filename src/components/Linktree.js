@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import "./styles/Linktree.css";
 import Profile from './Profile';
-import profilePic from './imgs/profile__img.png';
+import profilePic from './imgs/profile-img.jpg';
 import openIcon from './imgs/open-icon.png';
 import backIcon from './imgs/back-icon.png';
 import Socials from './Socials';
@@ -12,8 +12,8 @@ const Section = (props) => {
     return (
         <section className='Linktree'>
             <div className='Toggle'>
-                <a href='#'><img src={ openIcon} alt='open' id='Open'/></a>
-                <a href='#'><img src={ backIcon} alt='back' id='Back' /></a>
+                <a href='#open'><img src={ openIcon} alt='open' id='Open'/></a>
+                <a href='#back'><img src={ backIcon} alt='back' id='Back' /></a>
             </div>
             <Profile src={profilePic} />
 
