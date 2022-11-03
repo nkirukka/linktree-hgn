@@ -7,7 +7,11 @@ const Button = (props) => {
             <a className='Btn'
                 id={props.id}
                 href={props.href}>
-                {props.children}</a>
+                <div className='Title'>
+                    <h2>{ props.title}</h2>
+                    <sub>{ props.sub}</sub>
+                </div>
+            </a>
         </>
     );
 }
