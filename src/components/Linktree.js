@@ -6,7 +6,6 @@ import profilePic from './imgs/profile-img.jpg';
 import openIcon from './imgs/open-icon.png';
 import backIcon from './imgs/back-icon.png';
 import Socials from './Socials';
-import Footer from './Footer';
 
 const Section = (props) => {
     return (
@@ -55,7 +54,6 @@ const Section = (props) => {
             </div>
 
             <Socials />
-            <Footer/>
         </section>
     );
 };
