@@ -3,8 +3,6 @@
   height: 4.25em;
   font-style: normal;
   font-weight: 500;
-  font-size: .875rem;
-  line-height: 1.75em;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -12,7 +10,7 @@
   background-color: #eaecf0;
   color: #101828;
   text-align: center;
-  /* padding: 1.5em 2em; */
+  /* padding: .2em 0; */
   margin: auto;
   border: 1px solid #eaecf0;
   border-radius: 8px;
@@ -21,9 +19,25 @@
 .Btn:hover{
   background-color: #d4d9e4;
 }
+.Title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Title h2{
+  font-size: .899rem;
+  margin-bottom: .2em;
+}
+.Title sub{
+  font-weight: normal;
+  font-size: .8rem;
+}
 @media only screen and (min-width: 45em){
-  .Btn{
-    font-size: 1.125rem;
-    font-weight: 600;
-  }
+.Title h2{
+  font-size: 1.099rem;
+}
+.Title sub{
+  font-size: 1rem;
+}
 }
