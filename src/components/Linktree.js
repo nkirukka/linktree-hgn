@@ -20,29 +20,38 @@ const Section = (props) => {
             <div className='Btn-wrapper'>
                 <Button
                     href="https://twitter.com/nkirukka"
-                    id="twitter" > Twitter Link
-                </Button>
+                    id="twitter"
+                    title="Twitter Link"
+                />
                 <Button
                     href="https://training.zuri.team/"
-                    id="btn__zuri">Zuri Training
-                </Button>
+                    id="btn__zuri"
+                    title="Zuri Training"
+                />
                 <Button
                     href="https://books.zuri.team/"
-                    id="books">Zuri Books: Find design and coding books here
-                   
-                </Button>
+                    id="books"
+                    title='Zuri Books'
+                    sub="Find design and coding books here"
+                />
                 <Button
                     href="https://books.zuri.team/python-for-beginners?ref_id=nkirukka,"
-                    id="book__python">Python Books: Feature Python for Beginners and get royalties of any sale
-                </Button>
+                    id="book__python"
+                    title="Python Books"
+                    sub="Feature Python for Beginners and get royalties of any sale"
+                />
                 <Button
                     href="https://background.zuri.team/"
-                    id="pitch">Check for Coders: Hire credible talent by running a background check
-                </Button>
+                    id="pitch"
+                    title="Check for Coders"
+                    sub="Hire credible talent by running a background check"
+                /> 
                 <Button
                     href="https://books.zuri.team/design-rules"
-                    id="book__design">Design Books: Get free design books
-                </Button>
+                    id="book__design"
+                    title="Design Books"
+                    sub="Get free design books"
+                />
             </div>
 
             <Socials />
