@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.91ddf4c7.css",
-    "main.js": "/static/js/main.d9d315bf.js",
-    "static/js/787.9e85bf43.chunk.js": "/static/js/787.9e85bf43.chunk.js",
-    "static/media/profile-img.jpg": "/static/media/profile-img.75f3aaf18466fdc230ff.jpg",
-    "static/media/twitter.png": "/static/media/twitter.89d4a3b71f7ba90a3af9.png",
-    "static/media/slack.png": "/static/media/slack.55ad9eabc7f642f5e5a5.png",
-    "index.html": "/index.html",
-    "main.91ddf4c7.css.map": "/static/css/main.91ddf4c7.css.map",
-    "main.d9d315bf.js.map": "/static/js/main.d9d315bf.js.map",
-    "787.9e85bf43.chunk.js.map": "/static/js/787.9e85bf43.chunk.js.map"
+    "main.css": "/linktree-hgn/static/css/main.91ddf4c7.css",
+    "main.js": "/linktree-hgn/static/js/main.a1568db3.js",
+    "static/js/787.9e85bf43.chunk.js": "/linktree-hgn/static/js/787.9e85bf43.chunk.js",
+    "static/media/profile-img.jpg": "/linktree-hgn/static/media/profile-img.75f3aaf18466fdc230ff.jpg",
+    "static/media/twitter.png": "/linktree-hgn/static/media/twitter.89d4a3b71f7ba90a3af9.png",
+    "static/media/slack.png": "/linktree-hgn/static/media/slack.55ad9eabc7f642f5e5a5.png",
+    "index.html": "/linktree-hgn/index.html",
+    "main.91ddf4c7.css.map": "/linktree-hgn/static/css/main.91ddf4c7.css.map",
+    "main.a1568db3.js.map": "/linktree-hgn/static/js/main.a1568db3.js.map",
+    "787.9e85bf43.chunk.js.map": "/linktree-hgn/static/js/787.9e85bf43.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.91ddf4c7.css",
-    "static/js/main.d9d315bf.js"
+    "static/js/main.a1568db3.js"
   ]
 }
