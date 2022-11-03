@@ -7,6 +7,7 @@ import openIcon from './imgs/open-icon.png';
 import backIcon from './imgs/back-icon.png';
 import Socials from './Socials';
 
+import { Link } from 'react-router-dom';
 const Section = (props) => {
     return (
         <section className='Linktree'>
@@ -51,6 +52,7 @@ const Section = (props) => {
                     title="Design Books"
                     sub="Get free design books"
                 />
+                <Link className='Btn' id='contact' to="/contact" >Contact Me</Link> 
             </div>
 
             <Socials />

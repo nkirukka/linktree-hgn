@@ -27,6 +27,10 @@
 display: none;
 }
 
+#contact{
+    font-weight: 600;
+    font-size: .899rem;
+}
 @media only screen and (min-width: 45em){
     #Open{
         display: none;
@@ -40,4 +44,7 @@ display: none;
         right: 20%;
         top: 6%;
     }
+}
+#contact{
+    font-size: 1.099rem;
 }
