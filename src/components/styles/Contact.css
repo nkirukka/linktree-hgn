@@ -23,7 +23,7 @@
 }
 .Controls label{
   color: #344054;
-  font-size: 1rem;
+  font-size: .875rem;
   margin-bottom: .5em;
 }
 .Controls input, #message{
