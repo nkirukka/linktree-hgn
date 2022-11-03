@@ -1,0 +1,80 @@
+.Contact {
+  width: 90%;
+  max-width: 45em;
+  margin: 3em auto;
+  font-family: "Inter", "monospace", Arial, Helvetica, sans-serif;
+}
+.Contact__header h2 {
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #101828;
+}
+.Contact__header p{
+    font-size: 1.125rem;
+    color: #475467;
+}
+.Form__group{
+    margin: 3rem 0;
+}
+.Controls{
+  display: flex;
+  flex-direction: column;
+  margin: 1em 0;
+}
+.Controls label{
+  color: #344054;
+  font-size: 1rem;
+  margin-bottom: .5em;
+}
+.Controls input, #message{
+  border: 1px solid #D0D5DD;
+  padding: 1em .875em;
+  border-radius: 8px;
+  font-size: 1rem;
+  
+}
+.Controls input::placeholder, #message::placeholder{
+  color: #667085;
+  font-size: 1rem;
+}
+.Controls input:focus, #message:focus, #permission:focus{
+  border-color: #84CAFF;
+  outline: #84CAFF;
+}
+#message{
+  resize: none;
+}
+.Checkbox_control{
+  display: flex;
+  align-items: baseline;
+  gap: .5em;
+  margin-bottom: 2em;
+}
+.Checkbox_control label{
+  color: #475467;
+  font-size: 1rem;
+}
+#btn__submit{
+  border: none;
+background: #1570EF;
+color: #fff;
+width: 100%;
+font-size: 1rem;
+font-weight: 600;
+padding: 1em 1.25em;
+border-radius: 8px;
+cursor: pointer;
+transition: background .3s ease;
+}
+#btn__submit:hover{
+  background: #175CD3;
+}
+@media screen and (min-width: 45em) {
+  .First-last__container{
+    display: flex;
+    gap: 2em;
+  }
+  .First-last__container .Controls{
+    width: 50%;
+  }
+}
