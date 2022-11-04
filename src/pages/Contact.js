@@ -66,6 +66,13 @@ const Contact = () => {
 
         <button type='submit' id='btn__submit'>Send message</button>
       </form>
+
+      <div className='Overlay'>
+      <div className='Popup'>
+        <p>Thank you for your message, you will get a response shorlty.</p>
+        <button type='button' className='Close'>Close</button>
+      </div>
+      </div>
     </section>
   );
 }
