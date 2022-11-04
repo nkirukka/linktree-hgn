@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/linktree-hgn/static/css/main.10351d7d.css",
-    "main.js": "/linktree-hgn/static/js/main.a5ede40d.js",
+    "main.css": "/linktree-hgn/static/css/main.2e861edb.css",
+    "main.js": "/linktree-hgn/static/js/main.b5e5f7bc.js",
     "static/js/787.9e85bf43.chunk.js": "/linktree-hgn/static/js/787.9e85bf43.chunk.js",
     "static/media/profile-img.jpg": "/linktree-hgn/static/media/profile-img.75f3aaf18466fdc230ff.jpg",
     "static/media/twitter.png": "/linktree-hgn/static/media/twitter.89d4a3b71f7ba90a3af9.png",
     "static/media/slack.png": "/linktree-hgn/static/media/slack.55ad9eabc7f642f5e5a5.png",
     "index.html": "/linktree-hgn/index.html",
-    "main.10351d7d.css.map": "/linktree-hgn/static/css/main.10351d7d.css.map",
-    "main.a5ede40d.js.map": "/linktree-hgn/static/js/main.a5ede40d.js.map",
+    "main.2e861edb.css.map": "/linktree-hgn/static/css/main.2e861edb.css.map",
+    "main.b5e5f7bc.js.map": "/linktree-hgn/static/js/main.b5e5f7bc.js.map",
     "787.9e85bf43.chunk.js.map": "/linktree-hgn/static/js/787.9e85bf43.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10351d7d.css",
-    "static/js/main.a5ede40d.js"
+    "static/css/main.2e861edb.css",
+    "static/js/main.b5e5f7bc.js"
   ]
 }
