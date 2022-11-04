@@ -106,7 +106,8 @@ transition: background .3s ease;
 .Controls input.Error,
 #message.Error, 
 #permission.Error{
-  outline: 1px solid red;
+  border: 1px solid red;
+  box-shadow:1px 1px 2px red;
 }
 
 @media screen and (min-width: 45em) {
