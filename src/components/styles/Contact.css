@@ -97,6 +97,18 @@ transition: background .3s ease;
   color: white;
   cursor: pointer;
 }
+.Controls span.Error{
+  color: #ff0000;
+  font-size: 1rem;
+  margin-left: 1em;
+  margin-top: .3em;
+}
+.Controls input.Error,
+#message.Error, 
+#permission.Error{
+  outline: 1px solid red;
+}
+
 @media screen and (min-width: 45em) {
   .First-last__container{
     display: flex;
