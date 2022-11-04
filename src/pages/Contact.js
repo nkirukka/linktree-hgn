@@ -37,7 +37,7 @@ const Contact = () => {
       </header>
 
       {/* ### Form */}
-      <form className='Form__group' onSubmit={handleSubmit}>
+      <form className='Form__group' onSubmit={handleSubmit} noValidate>
 
         <div className='First-last__container'>
           
