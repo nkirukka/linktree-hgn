@@ -2,6 +2,7 @@
   width: 90%;
   max-width: 45em;
   margin: 3em auto;
+  /* position: relative; */
   font-family: "Inter", "monospace", Arial, Helvetica, sans-serif;
 }
 .Contact__header h2 {
@@ -68,6 +69,32 @@ transition: background .3s ease;
 }
 #btn__submit:hover{
   background: #175CD3;
+}
+.Overlay{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #14151652;
+}
+.Popup{
+  width: 200px;
+  max-width: 300px;
+  margin: auto;
+  transform: translateY(200%);
+  font-size: 1.2rem;
+  background: #b5ee87;
+  /* border: 1px solid rgb(85, 80, 80); */
+  padding: 1em;
+  box-shadow: -2px 2px 8px 1px rgba(0, 0, 0, 0.788);
+}
+.Close{
+  border: none;
+  padding: .5em 1em;
+  background: rgb(226, 25, 25);
+  color: white;
+  cursor: pointer;
 }
 @media screen and (min-width: 45em) {
   .First-last__container{
