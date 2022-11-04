@@ -24,9 +24,26 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setInput(initialVals);
-    setIsChecked(false);
-    setAction(true);
+    if (input.first_name.length === 0 || input.first_name.length < 3) {
+      alert('Please enter a valid first name')
+    } 
+    if (input.last_name.length === 0 || input.last_name.length < 3) {
+      alert('Please enter a valid last name')
+    }
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input.email)) {
+      alert('Please enter a valid email')
+    }
+    if (input.message.length === 0) {
+      alert('Please enter a message')
+    }
+    if (isChecked === false) {
+      alert('Accept disclaimer')
+    }
+    else {
+      setInput(initialVals);
+      setIsChecked(false);
+      setAction(true);
+    }
   }
   return (
     <section className='Contact'>
@@ -44,31 +61,35 @@ const Contact = () => {
           {/* ### First Name */}
           <div className='Controls'>
             <label htmlFor='first_name'>First name</label>
-            <input type='text' onChange={handleChange} id='first_name' name='first_name' value={input.first_name} placeholder='Enter your first name' />
+            <input type='text' className='Error' onChange={handleChange} id='first_name' name='first_name' value={input.first_name} placeholder='Enter your first name' />
+            <span className='Error'>Please enter a valid first name</span>
           </div>
 
           {/* ### Last Name */}
           <div className='Controls'>
             <label htmlFor='last_name'>Last name</label>
-            <input type='text' onChange={handleChange} id='last_name' name='last_name' value={input.last_name} placeholder='Enter your last name' />
+            <input type='text' className='Error' onChange={handleChange} id='last_name' name='last_name' value={input.last_name} placeholder='Enter your last name' />
+            <span className='Error'>Please enter a valid last name</span>
           </div>
         </div>
 
         {/* ### Email */}
         <div className='Controls'>
           <label htmlFor='email'>Email</label>
-          <input type='email' onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com' />
+          <input type='email' className='Error' onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com' />
+          <span className='Error'>Please enter a valid email address</span>
         </div>
 
         {/* ### Textarea */}
         <div className='Controls'>
           <label htmlFor='message'>Message</label>
-          <textarea id='message' onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..." />
+          <textarea id='message' className='Error' onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..." />
+          <span className='Error'>Please enter a message</span>
         </div>
 
         {/* ### Permission */}
         <div className='Checkbox_control'>
-          <input type='checkbox' checked={isChecked} onChange={handleChecked} name='permission' value='' id='permission' />
+          <input type='checkbox' className='Error' checked={isChecked} onChange={handleChecked} name='permission' value='' id='permission' />
           <label htmlFor='permission'>You agree to providing your data to Nkiruka who may contact you.</label>
         </div>
 
