@@ -72,17 +72,17 @@ transition: background .3s ease;
 }
 .Overlay{
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   position: absolute;
   top: 0;
   left: 0;
   background: #14151652;
 }
 .Popup{
-  width: 200px;
-  max-width: 300px;
+  width: 250px;
+  max-width: 400px;
   margin: auto;
-  transform: translateY(200%);
+  transform: translateY(300%);
   font-size: 1.2rem;
   background: #b5ee87;
   /* border: 1px solid rgb(85, 80, 80); */
@@ -91,7 +91,8 @@ transition: background .3s ease;
 }
 .Close{
   border: none;
-  padding: .5em 1em;
+  padding: 1em 1.5em;
+  font-size: .9rem;
   background: rgb(226, 25, 25);
   color: white;
   cursor: pointer;
@@ -103,5 +104,11 @@ transition: background .3s ease;
   }
   .First-last__container .Controls{
     width: 50%;
+  }
+  .Overlay{
+    max-height: 100vh;
+  }
+  .Popup{
+    transform: translateY(250%);
   }
 }
