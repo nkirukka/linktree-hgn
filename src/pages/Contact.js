@@ -9,6 +9,7 @@ const Contact = () => {
     message: '',
   }
   const [input, setInput] = useState(initialVals);
+  const [action, setAction] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = (e) => {
@@ -20,6 +21,13 @@ const Contact = () => {
   const handleChecked = (e) => {
     setIsChecked(!isChecked);
   }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setInput(initialVals);
+    setIsChecked(false);
+    setAction(true);
+  }
   return (
     <section className='Contact'>
       {/* ### Header */}
@@ -29,7 +37,7 @@ const Contact = () => {
       </header>
 
       {/* ### Form */}
-      <form className='Form__group'>
+      <form className='Form__group' onSubmit={handleSubmit}>
 
         <div className='First-last__container'>
           
@@ -49,13 +57,13 @@ const Contact = () => {
         {/* ### Email */}
         <div className='Controls'>
           <label htmlFor='email'>Email</label>
-          <input type='email' onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com'  />
+          <input type='email' onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com' />
         </div>
 
         {/* ### Textarea */}
         <div className='Controls'>
           <label htmlFor='message'>Message</label>
-          <textarea id='message' onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..."/>
+          <textarea id='message' onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..." />
         </div>
 
         {/* ### Permission */}
@@ -67,12 +75,15 @@ const Contact = () => {
         <button type='submit' id='btn__submit'>Send message</button>
       </form>
 
-      <div className='Overlay'>
-      <div className='Popup'>
-        <p>Thank you for your message, you will get a response shorlty.</p>
-        <button type='button' className='Close'>Close</button>
-      </div>
-      </div>
+      {action ?
+        <div className='Overlay'>
+        <div className='Popup'>
+          <p>Thank you for your message, you will get a response shorlty.</p>
+          <button type='button' onClick={()=>{setAction(false)}} className='Close'>Close</button>
+        </div>
+        </div> 
+        : null
+      }
     </section>
   );
 }
