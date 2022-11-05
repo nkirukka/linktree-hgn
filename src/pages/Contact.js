@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import '../components/styles/Contact.css';
-
+import { Link } from 'react-router-dom';
 const Contact = () => {
   const initialVals = {
     first_name: '',
@@ -112,7 +112,8 @@ const Contact = () => {
         <div className='Overlay'>
           <div className='Popup'>
             <p>Thank you for your message, you will get a response shorlty.</p>
-            <button type='button' onClick={() => { setOpenPopup(false) }} className='Close'>Close</button>
+            {/* <button type='button' onClick={() => { setOpenPopup(false) }} className='Close'>Close</button> */}
+            <Link className='Home_link' to='/'>BACK TO HOME</Link>
           </div>
         </div>
         : null
