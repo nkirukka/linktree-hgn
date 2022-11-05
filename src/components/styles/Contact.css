@@ -10,70 +10,73 @@
   font-size: 2.25rem;
   color: #101828;
 }
-.Contact__header p{
-    font-size: 1.125rem;
-    color: #475467;
+.Contact__header p {
+  font-size: 1.125rem;
+  color: #475467;
 }
-.Form__group{
-    margin: 3rem 0;
+.Form__group {
+  margin: 3rem 0;
 }
-.Controls{
+.Controls {
   display: flex;
   flex-direction: column;
   margin: 1em 0;
 }
-.Controls label{
+.Controls label {
   color: #344054;
-  font-size: .875rem;
-  margin-bottom: .5em;
+  font-size: 0.875rem;
+  margin-bottom: 0.5em;
 }
-.Controls input, #message{
-  border: 1px solid #D0D5DD;
-  padding: 1em .875em;
+.Controls input,
+#message {
+  border: 1px solid #d0d5dd;
+  padding: 1em 0.875em;
   border-radius: 8px;
   font-size: 1rem;
-  
 }
-.Controls input::placeholder, #message::placeholder{
+.Controls input::placeholder,
+#message::placeholder {
   color: #667085;
   font-size: 1rem;
 }
-.Controls input:focus, #message:focus, #permission:focus{
-  border-color: #84CAFF;
-  outline: #84CAFF;
+.Controls input:focus,
+#message:focus,
+#permission:focus {
+  border-color: #84caff;
+  outline: #84caff;
 }
-#message{
+#message {
   resize: none;
 }
-.Checkbox_control{
+.Checkbox_control {
   display: flex;
   align-items: baseline;
-  gap: .5em;
+  gap: 0.5em;
   margin-bottom: 2em;
 }
-.Checkbox_control label{
+.Checkbox_control label {
   color: #475467;
   font-size: 1rem;
 }
-#btn__submit{
+#btn__submit {
   border: none;
-background: #1570EF;
-color: #fff;
-width: 100%;
-font-size: 1rem;
-font-weight: 600;
-padding: 1em 1.25em;
-border-radius: 8px;
-cursor: pointer;
-transition: background .3s ease;
+  background: #1570ef;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1em 1.25em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-#btn__submit:hover{
-  background: #175CD3;
+#btn__submit:hover {
+  background: #175cd3;
 }
-#btn__submit:disabled{
- background: grey;
+#btn__submit:disabled {
+  background: grey;
 }
-.Overlay{
+.Overlay {
   width: 100vw;
   height: 120vh;
   position: absolute;
@@ -81,59 +84,66 @@ transition: background .3s ease;
   left: 0;
   background: #14151652;
 }
-.Popup{
+.Popup {
   width: 250px;
   max-width: 400px;
   margin: auto;
   transform: translateY(300%);
   font-size: 1.2rem;
   background: #b5ee87;
-  /* border: 1px solid rgb(85, 80, 80); */
+  border-radius: 5px;
   padding: 1em;
   box-shadow: -2px 2px 8px 1px rgba(0, 0, 0, 0.788);
 }
-.Close{
+.Close {
   border: none;
   padding: 1em 1.5em;
-  font-size: .9rem;
+  font-size: 0.9rem;
   background: rgb(226, 25, 25);
   color: white;
   cursor: pointer;
 }
-.Error{
+.Overlay .Home_link {
+  text-decoration: none;
+  color: white;
+  background: blue;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+}
+.Error {
   color: #ff0000;
   font-size: 1rem;
   margin-left: 1em;
-  margin-top: .3em;
+  margin-top: 0.3em;
   display: none;
 }
- 
-#permission:invalid[focused='true']{
+
+#permission:invalid[focused="true"] {
   outline: 1px solid red;
-} 
-input:invalid[focused='true']{
+}
+input:invalid[focused="true"] {
   border: 1px solid red;
 }
 
-input:invalid[focused='true'] ~ .Error{
-display: block;
+input:invalid[focused="true"] ~ .Error {
+  display: block;
 }
-textarea:invalid[focused='true'] ~ .Error{
-display: block;
+textarea:invalid[focused="true"] ~ .Error {
+  display: block;
 }
 
 @media screen and (min-width: 45em) {
-  .First-last__container{
+  .First-last__container {
     display: flex;
     gap: 2em;
   }
-  .First-last__container .Controls{
+  .First-last__container .Controls {
     width: 50%;
   }
-  .Overlay{
+  .Overlay {
     max-height: 100vh;
   }
-  .Popup{
+  .Popup {
     transform: translateY(250%);
   }
 }
