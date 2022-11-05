@@ -12,6 +12,7 @@ const Contact = () => {
   const [openPopup, setOpenPopup] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [isError, setIsError] = useState(false);
+  const [focused, setFocused] = useState(false);
 
   const handleChange = (e) => {
     setInput({
@@ -28,18 +29,34 @@ const Contact = () => {
   const invalidEmail = !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(input.email);
   const invalidMessage = input.message.length === 0;
 
+  const handleFocus=(e) => {
+    setFocused(true);
+  }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const validate = () => {
     if (invalidFname || invalidLname || invalidEmail || invalidMessage || !isChecked) {
       setIsError(true);
+      setFocused(true);
+      setIsChecked(isChecked)
+      return false
     } else {
-      setIsError(false);
+      setIsError(false)
+      return true
+    }
+  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validate()) {
       setInput(initialVals);
-      setIsChecked(false);
+      setIsError(false)
+      setFocused(false);
+      setIsChecked(!isChecked);
       setOpenPopup(true);
     }
+    
   };
+  
+  
   return (
     <section className='Contact'>
       {/* ### Header */}
@@ -56,35 +73,35 @@ const Contact = () => {
           {/* ### First Name */}
           <div className='Controls'>
             <label htmlFor='first_name'>First name</label>
-            <input type='text' className={isError ? 'Error' : ''} onChange={handleChange} id='first_name' name='first_name' value={input.first_name} placeholder='Enter your first name' />
-            {/* {isError ? <span className='Error'>Please enter a valid first name</span> : null} */}
+            <input type='text' onBlur={handleFocus} focused={focused.toString()}  onChange={handleChange} required id='first_name' name='first_name' value={input.first_name} placeholder='Enter your first name' />
+            {focused ?  <span className='Error'>Please enter a valid first name</span> : null}
           </div>
 
           {/* ### Last Name */}
           <div className='Controls'>
             <label htmlFor='last_name'>Last name</label>
-            <input type='text' className={isError ? 'Error' : null} onChange={handleChange} id='last_name' name='last_name' value={input.last_name} placeholder='Enter your last name' />
-            {isError ? <span className='Error'>Please enter a valid last name</span> : null}
+            <input type='text' required onBlur={handleFocus} focused={focused.toString()}  onChange={handleChange} id='last_name' name='last_name' value={input.last_name} placeholder='Enter your last name' />
+            {focused ? <span className='Error'>Please enter a valid last name</span> : null}
           </div>
         </div>
 
         {/* ### Email */}
         <div className='Controls'>
           <label htmlFor='email'>Email</label>
-          <input type='email' className={isError ? 'Error' : null} onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com' />
-          {isError ? <span className='Error'>Please enter a valid email address</span> : null}
+          <input type='email' required onBlur={handleFocus} focused={focused.toString()}  onChange={handleChange} id='email' name='email' value={input.email} placeholder='yourname@email.com' />
+          {focused ? <span className='Error'>Please enter a valid email address</span> : null}
         </div>
 
         {/* ### Textarea */}
         <div className='Controls'>
           <label htmlFor='message'>Message</label>
-          <textarea id='message' className={isError ? 'Error' : null} onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..." />
-          {isError ? <span className='Error'>Please enter a message</span> : null}
+          <textarea id='message' required onBlur={handleFocus} focused={focused.toString()}  onChange={handleChange} name='message' value={input.message} rows='5' placeholder="Send me a message and I'll reply you as soon as possible..." />
+          {focused ? <span className='Error'>Please enter a message</span> : null}
         </div>
 
         {/* ### Permission */}
         <div className='Checkbox_control'>
-          <input type='checkbox' className={isError ? 'Error' : null} checked={isChecked} onChange={handleChecked} name='permission' value='' id='permission' />
+          <input type='checkbox' onBlur={handleFocus} focused={focused.toString()} onChange={handleChecked} name='permission' required checked={isChecked} value='' id='permission' />
           <label htmlFor='permission'>You agree to providing your data to Nkiruka who may contact you.</label>
         </div>
 
