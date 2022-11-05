@@ -1,0 +1,25 @@
+.NoMatch{
+    width: 80%;
+    max-width: 720px;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+}
+.Oops{
+    margin-top: 3em;
+    font-size: 4rem;
+}
+.Oops_container{
+    max-width: 720px;
+}
+.NoMatch a{
+text-decoration: none;
+color: white;
+background: blue;
+padding: 1em 2em;
+
+}
+.NoMatch .message{
+    margin-bottom: 2em;
+    padding:  0 2em;
+}
