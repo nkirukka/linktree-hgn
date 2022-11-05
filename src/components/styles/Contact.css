@@ -70,6 +70,9 @@ transition: background .3s ease;
 #btn__submit:hover{
   background: #175CD3;
 }
+#btn__submit:disabled{
+ background: grey;
+}
 .Overlay{
   width: 100vw;
   height: 120vh;
@@ -97,17 +100,26 @@ transition: background .3s ease;
   color: white;
   cursor: pointer;
 }
-.Controls span.Error{
+.Error{
   color: #ff0000;
   font-size: 1rem;
   margin-left: 1em;
   margin-top: .3em;
+  display: none;
 }
-.Controls input.Error,
-#message.Error, 
-#permission.Error{
+ 
+#permission:invalid[focused='true']{
+  outline: 1px solid red;
+} 
+input:invalid[focused='true']{
   border: 1px solid red;
-  box-shadow:1px 1px 2px red;
+}
+
+input:invalid[focused='true'] ~ .Error{
+display: block;
+}
+textarea:invalid[focused='true'] ~ .Error{
+display: block;
 }
 
 @media screen and (min-width: 45em) {
